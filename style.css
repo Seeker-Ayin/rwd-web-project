@@ -1,0 +1,458 @@
+/* =========================
+   基本設定
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Arial,
+        "Noto Sans TC",
+        "Microsoft JhengHei",
+        sans-serif;
+
+    background: #f5f7fb;
+    color: #172033;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   導覽列
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #374151;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            120deg,
+            #111827,
+            #2563eb
+        );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.subtitle {
+    color: #93c5fd;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    margin: 20px 0;
+
+    font-size: clamp(42px, 7vw, 76px);
+
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 18px;
+
+    color: #dbeafe;
+}
+
+.button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 13px 24px;
+
+    border-radius: 10px;
+
+    background: #60a5fa;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #93c5fd;
+
+    color: #172033;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Section
+========================= */
+
+.section {
+    padding: 90px 7%;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title > p {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin: 5px 0;
+
+    font-size: 38px;
+}
+
+.section-title span {
+    color: #6b7280;
+}
+
+
+/* =========================
+   最新消息
+========================= */
+
+.news-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.news-card {
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    transition: 0.25s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0, 0, 0, 0.08);
+}
+
+.date {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.news-card h3 {
+    margin: 12px 0;
+
+    font-size: 22px;
+}
+
+.news-card p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   圖表
+========================= */
+
+.chart-section {
+    background: #eef4ff;
+}
+
+.chart-box {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.06);
+}
+
+.chart-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+.chart-header h3 {
+    font-size: 22px;
+}
+
+.chart-header p {
+    color: #6b7280;
+}
+
+.status {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.chart-container {
+    position: relative;
+
+    height: 380px;
+}
+
+
+/* =========================
+   MySQL
+========================= */
+
+.database-section {
+    background: #0f172a;
+
+    color: white;
+}
+
+.database-content {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.database-content h2 {
+    margin: 12px 0;
+
+    font-size: 38px;
+}
+
+.database-content > div > p:last-child {
+    color: #cbd5e1;
+}
+
+.flow {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.flow-item {
+    min-width: 90px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+}
+
+.flow span {
+    color: #60a5fa;
+
+    font-size: 22px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #020617;
+
+    color: #94a3b8;
+}
+
+
+/* =========================
+   RWD
+========================= */
+
+@media (max-width: 900px) {
+
+    .news-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .database-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 15px 5%;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 500px;
+
+        padding: 60px 5%;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-box {
+        padding: 18px;
+    }
+
+    .chart-header {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .chart-container {
+        height: 300px;
+    }
+
+    .database-content h2 {
+        font-size: 30px;
+    }
+
+    .flow {
+        flex-direction: column;
+    }
+
+    .flow span {
+        transform: rotate(90deg);
+    }
+
+}
