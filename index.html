@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>資訊展示網站</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <header class="navbar">
+        <div class="logo">My Website</div>
+
+        <nav>
+            <a href="#home">首頁</a>
+            <a href="#news">最新消息</a>
+            <a href="#data">資料圖表</a>
+        </nav>
+    </header>
+
+
+    <!-- 首頁 -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">RESPONSIVE WEB DESIGN</p>
+
+            <h1>
+                資訊展示<br>
+                RWD 網頁
+            </h1>
+
+            <p>
+                一個具有最新消息與資料圖表功能的
+                Responsive Web Design 網站。
+            </p>
+
+            <a href="#news" class="button">
+                查看最新消息
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- 最新消息 -->
+    <section id="news" class="section">
+
+        <div class="section-title">
+            <p>NEWS</p>
+            <h2>最新消息</h2>
+        </div>
+
+
+        <div class="news-container">
+
+            <article class="news-card">
+
+                <span class="date">
+                    2026 / 09 / 21
+                </span>
+
+                <h3>
+                    網站正式建立
+                </h3>
+
+                <p>
+                    RWD 網頁專案正式建立，
+                    目前提供最新消息與資料圖表功能。
+                </p>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <span class="date">
+                    2026 / 09 / 20
+                </span>
+
+                <h3>
+                    RWD 響應式設計
+                </h3>
+
+                <p>
+                    網站支援電腦、平板與手機，
+                    使用不同螢幕尺寸都能正常瀏覽。
+                </p>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <span class="date">
+                    COMING SOON
+                </span>
+
+                <h3>
+                    MySQL 資料庫
+                </h3>
+
+                <p>
+                    未來將連接 MySQL，
+                    讓最新消息與圖表資料可以由資料庫提供。
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- 圖表 -->
+    <section id="data" class="section chart-section">
+
+        <div class="section-title">
+            <p>DATA</p>
+            <h2>資料圖表</h2>
+
+            <span>
+                目前使用測試資料，未來可連接 MySQL。
+            </span>
+        </div>
+
+
+        <div class="chart-box">
+
+            <div class="chart-header">
+
+                <div>
+                    <h3>每月資料統計</h3>
+
+                    <p>
+                        以下資料為示範資料。
+                    </p>
+                </div>
+
+                <span class="status">
+                    Demo Data
+                </span>
+
+            </div>
+
+
+            <div class="chart-container">
+
+                <canvas id="myChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 未來資料庫 -->
+    <section class="database-section">
+
+        <div class="section database-content">
+
+            <div>
+
+                <p class="subtitle">
+                    FUTURE DATABASE
+                </p>
+
+                <h2>
+                    未來連接 MySQL
+                </h2>
+
+                <p>
+                    未來可以將網站資料儲存在 MySQL，
+                    再透過後端 API 傳送資料給前端，
+                    自動更新最新消息與圖表。
+                </p>
+
+            </div>
+
+
+            <div class="flow">
+
+                <div class="flow-item">
+                    🗄️<br>
+                    MySQL
+                </div>
+
+                <span>→</span>
+
+                <div class="flow-item">
+                    ⚙️<br>
+                    API
+                </div>
+
+                <span>→</span>
+
+                <div class="flow-item">
+                    💻<br>
+                    JavaScript
+                </div>
+
+                <span>→</span>
+
+                <div class="flow-item">
+                    📊<br>
+                    圖表
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 RWD Web Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
